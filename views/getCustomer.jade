@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+form(action="/createCustomer" method="post")
+label(for="title") name <br/>
+input#name(name="name")
+label(for="title") phone <br/>
+input#authore(name="phone")
+label(for="title") email <br/>
+input#authore(name="email")
+label(for="title") avatr <br/>
+input#authore(name="avatr")
+input(type="submit" value="save")
